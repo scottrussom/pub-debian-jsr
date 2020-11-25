@@ -1,0 +1,31 @@
+# files
+.DS_Store
+.dockerignore
+.gitattributes
+.gitignore
+*.iml
+docker-compose.yml
+Dockerfile
+# README.md
+
+# directories
+.git
+.github
+.idea
+dist
+k8s
+node_modules
+test
+
+
+# FROM: https://raw.githubusercontent.com/linuxserver/new-project-templates/master/docker/.dockerignore
+data/
+.env
+# .git
+# .gitignore
+# .github
+# .gitattributes
+.secret
+READMETEMPLATE.md
+# README.md
+run
