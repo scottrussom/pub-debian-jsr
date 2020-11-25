@@ -8,13 +8,13 @@
 # https://github.com/metcalfc/docker-action-examples
 
 
-name: GitHub default-branch ci
+# name: GitHub default-branch ci
  
 # Publish `$default-branch` as Docker `latest` image.
 on:
   push:
     branches: 
-      - $default-branch
+      - master
 
     # Publish `v1.2.3` tags as releases.
     tags:
