@@ -8,6 +8,6 @@ This Dockerfile creates an ssh service inside a debian docker container
 
 ` docker build -t IMAGE_NAME ` 
 
-## Runing the image 
+## Running the image 
 
 ` docker run IMAGE_NAME -p 2222:22 `

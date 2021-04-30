@@ -1,0 +1,37 @@
+# debianjsrstack
+# https://hub.docker.com/repository/docker/scottrussom/debian-jsr
+# https://github.com/scottrussom/pub-debian-jsr
+
+
+version: "2"
+services:
+  scottrussom-debian-jsr:
+    image: scottrussom/debian-jsr:latest
+    container_name: scottrussom-debian-jsr
+    environment:
+      - TZ=America/Chicago
+      - PUID=1000   # id -u pi
+      - PGID=100    # id -g users
+    labels:
+      - "com.centurylinklabs.watchtower.enable=false"
+    # #network_mode: host
+    # hostname: nextcloud
+    # domainname: nextcloud.lan
+    # mac_address: b8:27:eb:45:01:0a
+    # networks:
+    #   sharedmacvlan:
+    #     ipv4_address: 10.69.1.10
+    volumes:
+      - /sharedfolders/docker_data/scottrussom-debian-jsr_data:/data
+    # restart: unless-stopped
+    restart: on-failure:2
+
+# networks:
+#   sharedmacvlan:
+#     external:
+#       name: macvlan0
+
+
+#--------------------------------------------------------------------------------
+
+#### Made using the Portainer GUI
