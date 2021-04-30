@@ -35,3 +35,241 @@ services:
 #--------------------------------------------------------------------------------
 
 #### Made using the Portainer GUI
+# {
+#     "AppArmorProfile": "",
+#     "Args": [
+#         "-D"
+#     ],
+#     "Config": {
+#         "AttachStderr": false,
+#         "AttachStdin": false,
+#         "AttachStdout": false,
+#         "Cmd": [
+#             "/usr/sbin/sshd",
+#             "-D"
+#         ],
+#         "Domainname": "",
+#         "Entrypoint": null,
+#         "Env": [
+#             "TZ=America/Chicago",
+#             "PUID=1000",
+#             "PGID=100",
+#             "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+#         ],
+#         "ExposedPorts": {
+#             "22/tcp": {}
+#         },
+#         "Hostname": "bf538e4fdd36",
+#         "Image": "scottrussom/debian-jsr:latest",
+#         "Labels": {
+#             "com.centurylinklabs.watchtower.enable": "false",
+#             "com.docker.compose.config-hash": "6e7e86e6a967859e474b880b886538f7a7deb12f",
+#             "com.docker.compose.container-number": "1",
+#             "com.docker.compose.oneoff": "False",
+#             "com.docker.compose.project": "debianjsrstack",
+#             "com.docker.compose.service": "scottrussom-debian-jsr",
+#             "com.docker.compose.version": "1.5.0"
+#         },
+#         "OnBuild": null,
+#         "OpenStdin": false,
+#         "StdinOnce": false,
+#         "Tty": false,
+#         "User": "",
+#         "Volumes": null,
+#         "WorkingDir": ""
+#     },
+#     "Created": "2021-04-30T22:08:21.017808668Z",
+#     "Driver": "overlay2",
+#     "ExecIDs": null,
+#     "GraphDriver": {
+#         "Data": {
+#             "LowerDir": "/mnt/redraid/docker/overlay2/a1cbbff305dbdb8d6e7ea141e25555b588e806747f0221eddeb35990da0ae228-init/diff:/mnt/redraid/docker/overlay2/884b780a15078c72153981dc303f5051da0f86bdcfffbd1f6645480b0afb3506/diff:/mnt/redraid/docker/overlay2/76cc2e9aa134f4c73058078f3bbd1bb97718d0a2499ffe3c3d3e6c078561e597/diff:/mnt/redraid/docker/overlay2/4ad1f3b91befba599ee82d0945b3b271738aed6468ffe386436dea320385c01c/diff:/mnt/redraid/docker/overlay2/3470f41d927373adbd0c3141946450f0fea9161de42f5d7d59ff2d44ced58523/diff:/mnt/redraid/docker/overlay2/8e0a397643512fe004152d0fc41fe4a71a9ba8cf759229885aa2623d79c2faa2/diff:/mnt/redraid/docker/overlay2/22481c643cae00e33f3fd5ba13091fcc2db8d920a583859d1182af48bd250825/diff:/mnt/redraid/docker/overlay2/e9132d47ad86478d3fa1faa94ede6719860ba4bf5c45680f20a37b8c5ec089b0/diff",
+#             "MergedDir": "/mnt/redraid/docker/overlay2/a1cbbff305dbdb8d6e7ea141e25555b588e806747f0221eddeb35990da0ae228/merged",
+#             "UpperDir": "/mnt/redraid/docker/overlay2/a1cbbff305dbdb8d6e7ea141e25555b588e806747f0221eddeb35990da0ae228/diff",
+#             "WorkDir": "/mnt/redraid/docker/overlay2/a1cbbff305dbdb8d6e7ea141e25555b588e806747f0221eddeb35990da0ae228/work"
+#         },
+#         "Name": "overlay2"
+#     },
+#     "HostConfig": {
+#         "AutoRemove": false,
+#         "Binds": [
+#             "/sharedfolders/docker_data/scottrussom-debian-jsr_data:/data"
+#         ],
+#         "BlkioDeviceReadBps": null,
+#         "BlkioDeviceReadIOps": null,
+#         "BlkioDeviceWriteBps": null,
+#         "BlkioDeviceWriteIOps": null,
+#         "BlkioWeight": 0,
+#         "BlkioWeightDevice": null,
+#         "CapAdd": null,
+#         "CapDrop": null,
+#         "Cgroup": "",
+#         "CgroupParent": "",
+#         "CgroupnsMode": "host",
+#         "ConsoleSize": [
+#             0,
+#             0
+#         ],
+#         "ContainerIDFile": "",
+#         "CpuCount": 0,
+#         "CpuPercent": 0,
+#         "CpuPeriod": 0,
+#         "CpuQuota": 0,
+#         "CpuRealtimePeriod": 0,
+#         "CpuRealtimeRuntime": 0,
+#         "CpuShares": 0,
+#         "CpusetCpus": "",
+#         "CpusetMems": "",
+#         "DeviceCgroupRules": null,
+#         "DeviceRequests": null,
+#         "Devices": [],
+#         "Dns": null,
+#         "DnsOptions": null,
+#         "DnsSearch": null,
+#         "ExtraHosts": null,
+#         "GroupAdd": null,
+#         "IOMaximumBandwidth": 0,
+#         "IOMaximumIOps": 0,
+#         "IpcMode": "shareable",
+#         "Isolation": "",
+#         "KernelMemory": 0,
+#         "KernelMemoryTCP": 0,
+#         "Links": null,
+#         "LogConfig": {
+#             "Config": {},
+#             "Type": "json-file"
+#         },
+#         "MaskedPaths": [
+#             "/proc/asound",
+#             "/proc/acpi",
+#             "/proc/kcore",
+#             "/proc/keys",
+#             "/proc/latency_stats",
+#             "/proc/timer_list",
+#             "/proc/timer_stats",
+#             "/proc/sched_debug",
+#             "/proc/scsi",
+#             "/sys/firmware"
+#         ],
+#         "Memory": 0,
+#         "MemoryReservation": 0,
+#         "MemorySwap": 0,
+#         "MemorySwappiness": null,
+#         "NanoCpus": 0,
+#         "NetworkMode": "debianjsrstack_default",
+#         "OomKillDisable": null,
+#         "OomScoreAdj": 0,
+#         "PidMode": "",
+#         "PidsLimit": null,
+#         "PortBindings": {},
+#         "Privileged": false,
+#         "PublishAllPorts": false,
+#         "ReadonlyPaths": [
+#             "/proc/bus",
+#             "/proc/fs",
+#             "/proc/irq",
+#             "/proc/sys",
+#             "/proc/sysrq-trigger"
+#         ],
+#         "ReadonlyRootfs": false,
+#         "RestartPolicy": {
+#             "MaximumRetryCount": 2,
+#             "Name": "on-failure"
+#         },
+#         "Runtime": "runc",
+#         "SecurityOpt": null,
+#         "ShmSize": 67108864,
+#         "UTSMode": "",
+#         "Ulimits": [],
+#         "UsernsMode": "",
+#         "VolumeDriver": "",
+#         "VolumesFrom": null
+#     },
+#     "HostnamePath": "/mnt/redraid/docker/containers/bf538e4fdd36ec0f7a21f120a6ed90e9a7287d9ca2a806417a2989aa0285d598/hostname",
+#     "HostsPath": "/mnt/redraid/docker/containers/bf538e4fdd36ec0f7a21f120a6ed90e9a7287d9ca2a806417a2989aa0285d598/hosts",
+#     "Id": "bf538e4fdd36ec0f7a21f120a6ed90e9a7287d9ca2a806417a2989aa0285d598",
+#     "Image": "sha256:a1efc05493b26b3e0d2dd0ed057b00c9b3197a994381ea737f15eec577bf9f53",
+#     "LogPath": "/mnt/redraid/docker/containers/bf538e4fdd36ec0f7a21f120a6ed90e9a7287d9ca2a806417a2989aa0285d598/bf538e4fdd36ec0f7a21f120a6ed90e9a7287d9ca2a806417a2989aa0285d598-json.log",
+#     "MountLabel": "",
+#     "Mounts": [
+#         {
+#             "Destination": "/data",
+#             "Mode": "",
+#             "Propagation": "rprivate",
+#             "RW": true,
+#             "Source": "/sharedfolders/docker_data/scottrussom-debian-jsr_data",
+#             "Type": "bind"
+#         }
+#     ],
+#     "Name": "/scottrussom-debian-jsr",
+#     "NetworkSettings": {
+#         "Bridge": "",
+#         "EndpointID": "",
+#         "Gateway": "",
+#         "GlobalIPv6Address": "",
+#         "GlobalIPv6PrefixLen": 0,
+#         "HairpinMode": false,
+#         "IPAddress": "",
+#         "IPPrefixLen": 0,
+#         "IPv6Gateway": "",
+#         "LinkLocalIPv6Address": "",
+#         "LinkLocalIPv6PrefixLen": 0,
+#         "MacAddress": "",
+#         "Networks": {
+#             "debianjsrstack_default": {
+#                 "Aliases": [
+#                     "scottrussom-debian-jsr",
+#                     "bf538e4fdd36"
+#                 ],
+#                 "DriverOpts": null,
+#                 "EndpointID": "",
+#                 "Gateway": "",
+#                 "GlobalIPv6Address": "",
+#                 "GlobalIPv6PrefixLen": 0,
+#                 "IPAMConfig": {},
+#                 "IPAddress": "",
+#                 "IPPrefixLen": 0,
+#                 "IPv6Gateway": "",
+#                 "Links": [],
+#                 "MacAddress": "",
+#                 "NetworkID": "0473ee94cc8d20c4262417b1df7d7529c9f911edfedb4b97b5d7ac4c201a4554"
+#             }
+#         },
+#         "Ports": {},
+#         "SandboxID": "049dce6e6c21a390d683f6705be33bb25962eee66b263f3f897cc897b214a039",
+#         "SandboxKey": "/var/run/docker/netns/049dce6e6c21",
+#         "SecondaryIPAddresses": null,
+#         "SecondaryIPv6Addresses": null
+#     },
+#     "Path": "/usr/sbin/sshd",
+#     "Platform": "linux",
+#     "Portainer": {
+#         "ResourceControl": {
+#             "Id": 37,
+#             "ResourceId": "debianjsrstack",
+#             "SubResourceIds": [],
+#             "Type": 6,
+#             "UserAccesses": [],
+#             "TeamAccesses": [],
+#             "Public": false,
+#             "AdministratorsOnly": true,
+#             "System": false
+#         }
+#     },
+#     "ProcessLabel": "",
+#     "ResolvConfPath": "/mnt/redraid/docker/containers/bf538e4fdd36ec0f7a21f120a6ed90e9a7287d9ca2a806417a2989aa0285d598/resolv.conf",
+#     "RestartCount": 2,
+#     "State": {
+#         "Dead": false,
+#         "Error": "",
+#         "ExitCode": 1,
+#         "FinishedAt": "2021-04-30T22:08:29.879505912Z",
+#         "OOMKilled": false,
+#         "Paused": false,
+#         "Pid": 0,
+#         "Restarting": false,
+#         "Running": false,
+#         "StartedAt": "2021-04-30T22:08:29.881313547Z",
+#         "Status": "exited"
+#     }
+# }

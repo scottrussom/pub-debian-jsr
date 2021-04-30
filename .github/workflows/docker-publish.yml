@@ -1,10 +1,10 @@
-# name: Docker
+name: Docker
 
 on:
   push:
     # Publish `master` as Docker `latest` image.
     branches:
-      - skip-master
+      - master
 
     # Publish `v1.2.3` tags as releases.
     tags:
@@ -44,6 +44,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'push'
 
+    
     steps:
       - uses: actions/checkout@v2
 

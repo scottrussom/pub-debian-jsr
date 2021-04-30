@@ -14,7 +14,7 @@
 on:
   push:
     branches: 
-      - master
+      - skip-master
 
     # Publish `v1.2.3` tags as releases.
     tags:
