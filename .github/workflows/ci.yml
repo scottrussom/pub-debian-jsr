@@ -75,7 +75,7 @@ jobs:
 
       - name: Set up QEMU
         id: qemu
-        uses: docker/setup-qemu-action@v1
+        uses: docker/setup-qemu-action@v1.1.0
         # defaults to with: platforms: all
 
       - name: Setup Docker Buildx
